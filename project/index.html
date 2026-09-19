@@ -5,15 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Учебный проект по техническому заданию"
+      content="История Марии о любимом хобби: почему вязание успокаивает, как всё началось с подарка и почему пушистая пряжа — лучшая"
     />
-    <title>Учебный проект</title>
+    <title>Мария и вязание — история о любимом хобби</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <main>
-      <h1>Учебный проект</h1>
-      <p>Стартовая версия страницы.</p>
+    <header class="site-header container">
+      <a class="site-header__brand" href="#top">Мария и вязание</a>
+      <nav class="site-header__nav" aria-label="Навигация по истории">
+        <a href="#story">Как всё началось</a>
+        <a href="#facts">Три факта</a>
+        <a href="#try">Попробовать</a>
+      </nav>
+    </header>
+
+    <main id="top" class="container page">
+      <section class="hero card" aria-labelledby="hero-title">
+        <div class="hero__copy">
+          <p class="eyebrow">Любимое хобби</p>
+          <h1 id="hero-title">Мне нравится вязать</h1>
+          <p class="hero__lead">
+            Это небольшая уютная история о том, почему вязание стало для меня
+            способом отдыхать и дарить тепло. Прочитайте её — и вы поймёте
+            меня немного лучше.
+          </p>
+          <div class="hero__actions">
+            <a class="button" href="#story">Прочитать историю</a>
+            <label class="seen-confirm">
+              <input class="seen-confirm__input" type="checkbox" />
+              <span class="seen-confirm__box" aria-hidden="true"></span>
+              <span class="seen-confirm__text">я увидел</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="hero__badge">
+          <span>Главная мысль</span>
+          <strong>Вязание меня успокаивает</strong>
+        </div>
+      </section>
+
+      <section id="story" class="story" aria-labelledby="story-title">
+        <div class="section-heading">
+          <p class="eyebrow">История</p>
+          <h2 id="story-title">Как всё началось</h2>
+        </div>
+
+        <div class="story__body card">
+          <p class="story__lead">
+            Я попробовала вязать, потому что хотела сделать подарок — не
+            купленный в магазине, а связанный своими руками.
+          </p>
+          <p>
+            Когда вяжешь вещь для конкретного человека, каждая петля — это
+            немного внимания и заботы. Так хобби появилось в моей жизни:
+            сначала ради одного подарка, а потом ради самого процесса.
+          </p>
+          <p>
+            Со временем я заметила, что вязание даёт мне больше, чем готовые
+            вещи: размеренные движения спиц успокаивают, мысли выстраиваются,
+            а вечер с пряжей становится самым уютным временем дня.
+          </p>
+        </div>
+      </section>
+
+      <section id="facts" class="facts" aria-labelledby="facts-title">
+        <div class="section-heading">
+          <p class="eyebrow">Главное</p>
+          <h2 id="facts-title">Три факта о моём вязании</h2>
+        </div>
+
+        <div class="facts__grid">
+          <article class="fact-card card">
+            <span class="fact-card__index">01</span>
+            <h3 class="fact-card__title">Вязание меня успокаивает</h3>
+            <p class="fact-card__text">
+              Повторяющиеся движения работают как медитация: уходит
+              напряжение, дыхание выравнивается, и день заканчивается спокойно.
+            </p>
+            <label class="seen-confirm">
+              <input class="seen-confirm__input" type="checkbox" />
+              <span class="seen-confirm__box" aria-hidden="true"></span>
+              <span class="seen-confirm__text">я увидел</span>
+            </label>
+          </article>
+
+          <article class="fact-card card">
+            <span class="fact-card__index">02</span>
+            <h3 class="fact-card__title">Начала ради подарка</h3>
+            <p class="fact-card__text">
+              Первое, что я захотела связать, — подарок близкому человеку.
+              Именно желание сделать что-то своими руками привело меня к
+              спицам и пряже.
+            </p>
+            <label class="seen-confirm">
+              <input class="seen-confirm__input" type="checkbox" />
+              <span class="seen-confirm__box" aria-hidden="true"></span>
+              <span class="seen-confirm__text">я увидел</span>
+            </label>
+          </article>
+
+          <article class="fact-card fact-card--highlight card">
+            <span class="fact-card__index">03</span>
+            <h3 class="fact-card__title">Люблю пушистую пряжу</h3>
+            <p class="fact-card__text">
+              Больше всего мне нравится пушистая пряжа: она мягкая, тёплая и
+              сама по себе создаёт ощущение уюта ещё до того, как вещь
+              связана.
+            </p>
+            <label class="seen-confirm">
+              <input class="seen-confirm__input" type="checkbox" />
+              <span class="seen-confirm__box" aria-hidden="true"></span>
+              <span class="seen-confirm__text">я увидел</span>
+            </label>
+          </article>
+        </div>
+      </section>
+
+      <section id="try" class="try" aria-labelledby="try-title">
+        <div class="try__text card">
+          <p class="eyebrow">Итог</p>
+          <h2 id="try-title">
+            Мне нравится пушистая пряжа — советую попробовать
+          </h2>
+          <p>
+            Если вам хочется спокойного и тёплого занятия, возьмите моток
+            пушистой пряжи и попробуйте связать что-нибудь простое. Это
+            проще, чем кажется, а уют начинается уже с первых петель.
+          </p>
+          <label class="seen-confirm">
+            <input class="seen-confirm__input" type="checkbox" />
+            <span class="seen-confirm__box" aria-hidden="true"></span>
+            <span class="seen-confirm__text">я увидел</span>
+          </label>
+        </div>
+        <a class="button button--secondary" href="#top">Перечитать историю</a>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>История создана по интервью с заказчиком</p>
+        <p>Светличный Максим · 2026</p>
+      </div>
+    </footer>
   </body>
 </html>
